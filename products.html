@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handcrafted Baskets, Ceramics & Furniture | Kalahari Roots</title>
+  <meta name="description" content="Browse and search handmade South African baskets, stoneware ceramics, woven textiles and solid wood furniture. Filter by category and sort by price.">
+  <meta name="keywords" content="buy woven baskets, stoneware vase South Africa, handwoven blanket, reclaimed wood stool, live edge side table, handmade homeware">
+  <meta name="author" content="Kalahari Roots">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#8B5A2B">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https://tile.openstreetmap.org https://cdnjs.cloudflare.com; connect-src 'self' https://jsonplaceholder.typicode.com; form-action 'self' https://jsonplaceholder.typicode.com; object-src 'none'; base-uri 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="canonical" href="https://kalahari-roots.netlify.app/products.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kalahari Roots">
+  <meta property="og:title" content="Handcrafted Baskets, Ceramics & Furniture | Kalahari Roots">
+  <meta property="og:description" content="Browse and search handmade South African baskets, stoneware ceramics, woven textiles and solid wood furniture. Filter by category and sort by price.">
+  <meta property="og:url" content="https://kalahari-roots.netlify.app/products.html">
+  <meta property="og:image" content="https://kalahari-roots.netlify.app/images/ilala-palm-storage-basket.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/ilala-palm-storage-basket.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a href="index.html" class="logo">Kalahari <span>Roots</span></a>
+      <button type="button" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html" aria-current="page">Products</a></li>
+        <li><a href="enquiry.html">Enquire</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-header">
+      <div class="container">
+        <span class="eyebrow">Shop</span>
+        <h1>Our Collection</h1>
+        <p>Every piece below is made by hand by one of our South African artisan partners. Prices shown are per item; volume and custom orders are available on <a href="enquiry.html">enquiry</a>.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="toolbar">
+          <div class="form-row">
+            <label for="product-search">Search products</label>
+            <input type="search" id="product-search" placeholder="Try &quot;basket&quot;, &quot;oak&quot; or &quot;wool&quot;" autocomplete="off">
+          </div>
+          <div class="form-row">
+            <label for="product-sort">Sort by</label>
+            <select id="product-sort">
+              <option value="name-asc">Name (A–Z)</option>
+              <option value="name-desc">Name (Z–A)</option>
+              <option value="price-asc">Price (low to high)</option>
+              <option value="price-desc">Price (high to low)</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-row" role="group" aria-label="Filter by category">
+          <button type="button" class="filter-btn active" data-category="all">All</button>
+          <button type="button" class="filter-btn" data-category="baskets">Baskets</button>
+          <button type="button" class="filter-btn" data-category="ceramics">Ceramics</button>
+          <button type="button" class="filter-btn" data-category="textiles">Textiles</button>
+          <button type="button" class="filter-btn" data-category="furnishings">Furnishings</button>
+        </div>
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+        <div class="product-grid" id="product-grid"></div>
+        <div class="no-results" id="no-results" hidden>
+          <h2>No products match your search</h2>
+          <p>Try a different word, or <button type="button" class="btn btn-outline btn-small" id="clear-search">reset filters</button> — or <a href="enquiry.html">ask us about a custom piece</a>.</p>
+        </div>
+        <noscript><p>Please enable JavaScript to browse the catalogue, or <a href="contact.html">contact us</a> for a price list.</p></noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="logo">Kalahari Roots</span>
+          <p>Locally handcrafted home décor — woven baskets, ceramics, textiles and wood furnishings from South African artisans in Cape Town.</p>
+          <ul class="social">
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Kalahari Roots on Instagram">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Kalahari Roots on Facebook">Facebook</a></li>
+            <li><a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="Kalahari Roots on Pinterest">Pinterest</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Handcrafted Products</a></li>
+            <li><a href="enquiry.html">Product Enquiry</a></li>
+            <li><a href="contact.html">Contact &amp; Locations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Visit</h3>
+          <ul>
+            <li>Main Store — Woodstock, Cape Town</li>
+            <li>Market Stall — Oranjezicht City Farm Market</li>
+            <li>Mon–Sat, 09:00–17:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Kalahari Roots. All rights reserved.</span>
+        <span>Fictional organisation created for academic purposes.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/products.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

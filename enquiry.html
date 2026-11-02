@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Enquiry & Custom Orders | Kalahari Roots</title>
+  <meta name="description" content="Ask about stock, custom orders or wholesale pricing for Kalahari Roots handmade décor. Send an enquiry and get an instant price and availability estimate.">
+  <meta name="keywords" content="product enquiry, custom handmade furniture order, wholesale baskets South Africa, stock availability, handcrafted decor quote">
+  <meta name="author" content="Kalahari Roots">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#8B5A2B">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https://tile.openstreetmap.org https://cdnjs.cloudflare.com; connect-src 'self' https://jsonplaceholder.typicode.com; form-action 'self' https://jsonplaceholder.typicode.com; object-src 'none'; base-uri 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="canonical" href="https://kalahari-roots.netlify.app/enquiry.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kalahari Roots">
+  <meta property="og:title" content="Product Enquiry & Custom Orders | Kalahari Roots">
+  <meta property="og:description" content="Ask about stock, custom orders or wholesale pricing for Kalahari Roots handmade décor. Send an enquiry and get an instant price and availability estimate.">
+  <meta property="og:url" content="https://kalahari-roots.netlify.app/enquiry.html">
+  <meta property="og:image" content="https://kalahari-roots.netlify.app/images/ilala-palm-storage-basket.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/ilala-palm-storage-basket.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a href="index.html" class="logo">Kalahari <span>Roots</span></a>
+      <button type="button" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html" aria-current="page">Enquire</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-header">
+      <div class="container">
+        <span class="eyebrow">Product Enquiry</span>
+        <h1>Ask about a piece, stock, or a custom order</h1>
+        <p>Fill in the form below for an instant estimate. Our team confirms within two business days. Coming from a product page? We've already selected the item for you.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="response-card" id="response-card" role="status" aria-live="polite"></div>
+
+        <form class="form-card" id="enquiry-form" action="https://jsonplaceholder.typicode.com/posts" method="post" novalidate>
+          <div class="form-two">
+            <div class="form-row">
+              <label for="enq-name">Full name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="enq-name" name="name" data-rule="name" required minlength="2" maxlength="60" autocomplete="name">
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-row">
+              <label for="enq-email">Email address <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="enq-email" name="email" data-rule="email" required maxlength="100" autocomplete="email">
+              <span class="form-error" role="alert"></span>
+            </div>
+          </div>
+
+          <div class="form-two">
+            <div class="form-row">
+              <label for="enq-phone">Phone number <span class="req" aria-hidden="true">*</span></label>
+              <input type="tel" id="enq-phone" name="phone" data-rule="phone" required inputmode="tel" placeholder="082 555 0148" autocomplete="tel">
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-row">
+              <label for="enq-qty">Quantity <span class="req" aria-hidden="true">*</span></label>
+              <input type="number" id="enq-qty" name="quantity" data-rule="quantity" required min="1" max="100" value="1">
+              <span class="form-error" role="alert"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="product-interest">Product of interest <span class="req" aria-hidden="true">*</span></label>
+            <select id="product-interest" name="product" required><option value="">Loading products…</option></select>
+            <span class="form-error" role="alert"></span>
+          </div>
+
+          <div class="form-two">
+            <div class="form-row">
+              <label for="enq-type">Enquiry type <span class="req" aria-hidden="true">*</span></label>
+              <select id="enq-type" name="enquiry-type" required>
+                <option value="">Select an option</option>
+                <option value="stock">Stock availability</option>
+                <option value="custom">Custom order</option>
+                <option value="wholesale">Wholesale / bulk order</option>
+                <option value="general">General question</option>
+              </select>
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-row">
+              <label for="enq-contact">Preferred contact method <span class="req" aria-hidden="true">*</span></label>
+              <select id="enq-contact" name="preferred-contact" required>
+                <option value="">Select an option</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone call</option>
+                <option value="whatsapp">WhatsApp</option>
+              </select>
+              <span class="form-error" role="alert"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="enq-message">Anything else we should know? (optional)</label>
+            <textarea id="enq-message" name="message" rows="4" maxlength="500" data-rule="message" placeholder="Size, colour, delivery area…"></textarea>
+            <span class="char-count">0 / 500</span>
+            <span class="form-error" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="enq-submit">Send enquiry</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container" style="max-width:800px">
+        <div class="section-head"><span class="eyebrow">FAQ</span><h2>Quick answers before you ask</h2></div>
+        <div class="accordion-item">
+          <h3><button type="button" class="accordion-btn" id="faq-btn-0" aria-expanded="false" aria-controls="faq-panel-0">How long does a custom order take?</button></h3>
+          <div class="accordion-panel" id="faq-panel-0" role="region" aria-labelledby="faq-btn-0"><p>Most custom pieces take two to four weeks depending on the material and size. We confirm a date once the artisan has reviewed your request.</p></div>
+        </div>
+        <div class="accordion-item">
+          <h3><button type="button" class="accordion-btn" id="faq-btn-1" aria-expanded="false" aria-controls="faq-panel-1">Do you offer wholesale or bulk pricing?</button></h3>
+          <div class="accordion-panel" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1"><p>Yes. Orders of five or more units of the same item qualify for 10% off. Select “Wholesale / bulk order” in the form to see an estimate.</p></div>
+        </div>
+        <div class="accordion-item">
+          <h3><button type="button" class="accordion-btn" id="faq-btn-2" aria-expanded="false" aria-controls="faq-panel-2">Can I collect in store?</button></h3>
+          <div class="accordion-panel" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2"><p>Absolutely. Collect from our Woodstock store or the Oranjezicht City Farm Market stall — see our <a href="contact.html">contact page</a> for the map and hours.</p></div>
+        </div>
+        <div class="accordion-item">
+          <h3><button type="button" class="accordion-btn" id="faq-btn-3" aria-expanded="false" aria-controls="faq-panel-3">How will you reply to my enquiry?</button></h3>
+          <div class="accordion-panel" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3"><p>You get an instant estimate on screen, and our team follows up by your chosen contact method within two business days.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="logo">Kalahari Roots</span>
+          <p>Locally handcrafted home décor — woven baskets, ceramics, textiles and wood furnishings from South African artisans in Cape Town.</p>
+          <ul class="social">
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Kalahari Roots on Instagram">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Kalahari Roots on Facebook">Facebook</a></li>
+            <li><a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="Kalahari Roots on Pinterest">Pinterest</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Handcrafted Products</a></li>
+            <li><a href="enquiry.html">Product Enquiry</a></li>
+            <li><a href="contact.html">Contact &amp; Locations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Visit</h3>
+          <ul>
+            <li>Main Store — Woodstock, Cape Town</li>
+            <li>Market Stall — Oranjezicht City Farm Market</li>
+            <li>Mon–Sat, 09:00–17:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Kalahari Roots. All rights reserved.</span>
+        <span>Fictional organisation created for academic purposes.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/products.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+# Kalahari Roots — crawler instructions
+User-agent: *
+Allow: /
+Disallow: /css/
+Disallow: /js/
+
+Sitemap: https://kalahari-roots.netlify.app/sitemap.xml

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Store Locations | Kalahari Roots, Woodstock Cape Town</title>
+  <meta name="description" content="Find Kalahari Roots in Woodstock, Cape Town and at the Oranjezicht City Farm Market. View our interactive map, trading hours, and send us a message.">
+  <meta name="keywords" content="Kalahari Roots contact, Woodstock Cape Town store, Oranjezicht City Farm Market stall, home decor shop opening hours">
+  <meta name="author" content="Kalahari Roots">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#8B5A2B">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https://tile.openstreetmap.org https://cdnjs.cloudflare.com; connect-src 'self' https://jsonplaceholder.typicode.com; form-action 'self' https://jsonplaceholder.typicode.com; object-src 'none'; base-uri 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="canonical" href="https://kalahari-roots.netlify.app/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kalahari Roots">
+  <meta property="og:title" content="Contact & Store Locations | Kalahari Roots, Woodstock Cape Town">
+  <meta property="og:description" content="Find Kalahari Roots in Woodstock, Cape Town and at the Oranjezicht City Farm Market. View our interactive map, trading hours, and send us a message.">
+  <meta property="og:url" content="https://kalahari-roots.netlify.app/contact.html">
+  <meta property="og:image" content="https://kalahari-roots.netlify.app/images/ilala-palm-storage-basket.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/ilala-palm-storage-basket.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a href="index.html" class="logo">Kalahari <span>Roots</span></a>
+      <button type="button" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquire</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-header">
+      <div class="container">
+        <span class="eyebrow">Get in Touch</span>
+        <h1>Contact Us</h1>
+        <p>Have a question or want to know more? Reach out below, or visit us in person.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="contact-columns">
+          <div class="reveal">
+            <h2>Contact details</h2>
+            <p><strong>Phone:</strong> <a href="tel:+27215550148">021 555 0148</a></p>
+            <p><strong>Email:</strong> <a href="mailto:hello@kalahariroots.co.za">hello@kalahariroots.co.za</a></p>
+            <p><strong>WhatsApp:</strong> 082 555 0148</p>
+            <p><strong>Hours:</strong> Mon–Sat, 09:00–17:00</p>
+            <p>For product-specific questions, the <a href="enquiry.html">enquiry form</a> reaches us faster than a general message here.</p>
+          </div>
+          <div class="reveal">
+            <h2>Send a message</h2>
+            <form class="form-card" id="contact-form" data-recipient="hello@kalahariroots.co.za" novalidate style="max-width:100%">
+              <div class="form-row">
+                <label for="c-name">Full name <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="c-name" name="name" data-rule="name" required minlength="2" maxlength="60" autocomplete="name">
+                <span class="form-error" role="alert"></span>
+              </div>
+              <div class="form-row">
+                <label for="c-email">Email address <span class="req" aria-hidden="true">*</span></label>
+                <input type="email" id="c-email" name="email" data-rule="email" required maxlength="100" autocomplete="email">
+                <span class="form-error" role="alert"></span>
+              </div>
+              <div class="form-row">
+                <label for="c-phone">Phone number (optional)</label>
+                <input type="tel" id="c-phone" name="phone" data-rule="phone" inputmode="tel" placeholder="082 555 0148" autocomplete="tel">
+                <span class="form-error" role="alert"></span>
+              </div>
+              <div class="form-row">
+                <label for="c-type">Type of message <span class="req" aria-hidden="true">*</span></label>
+                <select id="c-type" name="message-type" required>
+                  <option value="">Select an option</option>
+                  <option value="general">General question</option>
+                  <option value="order">Existing order</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="artisan">Become an artisan partner</option>
+                </select>
+                <span class="form-error" role="alert"></span>
+              </div>
+              <div class="form-row">
+                <label for="c-message">Message <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="c-message" name="message" rows="5" required minlength="10" maxlength="500" data-rule="message"></textarea>
+                <span class="char-count">0 / 500</span>
+                <span class="form-error" role="alert"></span>
+              </div>
+              <div class="form-row check-row">
+                <input type="checkbox" id="c-consent" name="consent" required>
+                <label for="c-consent">I agree that Kalahari Roots may use these details to reply to me. <span class="req" aria-hidden="true">*</span></label>
+                <span class="form-error" role="alert"></span>
+              </div>
+              <button type="submit" class="btn btn-primary">Prepare email</button>
+            </form>
+            <div class="form-success" id="email-box" role="status" style="margin-top:1rem;max-width:100%">
+              <h3>Your email is ready</h3>
+              <p>Check the message below, then send it to us from your own email app.</p>
+              <div class="email-preview" id="email-preview"></div>
+              <a class="btn btn-primary" id="email-link" href="#">Open in my email app</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-wrap reveal">
+          <h2>Find us</h2>
+          <div class="map-buttons">
+            <button type="button" class="btn btn-outline btn-small map-btn" data-index="0">Woodstock store</button>
+            <button type="button" class="btn btn-outline btn-small map-btn" data-index="1">Market stall</button>
+          </div>
+          <div id="map" role="region" aria-label="Interactive map of Kalahari Roots locations"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="logo">Kalahari Roots</span>
+          <p>Locally handcrafted home décor — woven baskets, ceramics, textiles and wood furnishings from South African artisans in Cape Town.</p>
+          <ul class="social">
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Kalahari Roots on Instagram">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Kalahari Roots on Facebook">Facebook</a></li>
+            <li><a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="Kalahari Roots on Pinterest">Pinterest</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Handcrafted Products</a></li>
+            <li><a href="enquiry.html">Product Enquiry</a></li>
+            <li><a href="contact.html">Contact &amp; Locations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Visit</h3>
+          <ul>
+            <li>Main Store — Woodstock, Cape Town</li>
+            <li>Market Stall — Oranjezicht City Farm Market</li>
+            <li>Mon–Sat, 09:00–17:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Kalahari Roots. All rights reserved.</span>
+        <span>Fictional organisation created for academic purposes.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+  <script src="js/products.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
